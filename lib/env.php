@@ -80,8 +80,8 @@ function json_output($data) {
 	println($out);
 }
 
-// timestamp_decode decodes an rfc3339/iso8601 string and
-// returns a unix timestamp on success, or false on error.
+// timestamp_decode decodes an rfc3339/iso8601 string, returning a timestamp.
+// If a decoding error occurs, false is returned.
 function timestamp_decode($rfc3339) {
 	return strtotime($rfc3339);
 }
@@ -97,6 +97,9 @@ function timestamp_encode($timestamp) {
 	return $date;
 }
 
+// bound outputs a fava task boundary.
+// It is appropriate for separating json data, but custom boundary generation
+// may be needed to separate binary or arbitrary text data.
 function bound() {
 	println('---');
 }

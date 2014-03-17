@@ -1,4 +1,5 @@
 <?php
+// Replaces the default PHP error handler to make notices and warnings fatal too.
 
 error_reporting(E_ALL);
 set_error_handler(function($errno, $msg, $file, $line, $ctx) {
