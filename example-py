@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+# HINT: remove HINT comments from production scripts.
+# HINT: call with within the appropriate pwd.
+# HINT: if an error occurs, you _must_ exit non-zero.
+# HINT: error messages _must_ be written to stderr.
+
+# HINT: see lib/__init__.py for utility functions.
+import lib
+
+# HINT: *all* errors, warnings, and notices are fatal in this environment.
+
+# HINT: read json data from stdin.
+data = lib.json_input()
+
+# modify data in place.
+
+# HINT: lib.fail and lib.failf write args to stderr before exiting status 1
+
+# HINT: if creating multiple tasks, use lib.bound() before each lib.json_output
+
+# HINT: dump json data to stdout.
+lib.json_output(data)

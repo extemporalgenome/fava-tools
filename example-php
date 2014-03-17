@@ -1,0 +1,24 @@
+#!/usr/bin/php
+<?php
+# HINT: remove HINT comments from production scripts.
+# HINT: call with within the appropriate pwd.
+# HINT: if an error occurs, you _must_ exit non-zero.
+# HINT: error messages _must_ be written to stderr.
+
+# HINT: see lib/env.php for utility functions.
+require "lib/env.php";
+
+# HINT: *all* errors, warnings, and notices are fatal in this environment.
+# HINT: timestamps are handled in UTC.
+
+# HINT: read json data from stdin.
+$data = json_input();
+
+# modify data in place.
+
+# HINT: fail and failf write args to stderr before exiting with status 1.
+
+# HINT: if creating multiple tasks, use bound() before each json_output call.
+
+# HINT: dump json data to stdout.
+json_output($data);
